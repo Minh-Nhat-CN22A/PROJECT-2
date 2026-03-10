@@ -2,9 +2,32 @@
 <html>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Đăng nhập </title>
+  <title>Đăng nhập</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </html>
 <body> 
-  <h1>Trang đăng nhập</h1>
+  <div class="page_account">
+    <div class="inner_form"> 
+      <h1 class="inner_title">Đăng nhập</h1>
+      <div class="inner_desc">Vui lòng nhập email và mật khẩu để tiếp tục</div>
+      <form> 
+        <div class="inner_group">
+          <label class="inner_label" for="email">Email</label>
+          <input class="inner_input" id="email" type="email" placeholder="Ví dụ: levana@gmail.com"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="pwd">Mật khẩu</label>
+          <input class="inner_input" id="pwd" type="password"/>
+        </div>
+        <div class="inner_meta"> 
+          <div class="checkbox-wrapper-1">
+            <input class="substituted" aria-hidden="true" type="checkbox" id="rememberpwd"/>
+            <label for="rememberpwd">Nhớ mật khẩu</label>
+          </div><a href="#">Quên mật khẩu?</a>
+        </div>
+        <button>Đăng Nhập</button>
+      </form>
+      <div class="inner_more"><span>Bạn chưa có tài khoản?</span><a href="#">Tạo tài khoản</a></div>
+    </div>
+  </div>
 </body>

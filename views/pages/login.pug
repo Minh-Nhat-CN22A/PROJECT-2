@@ -1,8 +1,23 @@
-doctype html 
-html
-  meta(charset="UTF-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  title Đăng nhập 
-  link(rel="stylesheet", href="assets/css/style.css")
-body 
-  h1 Trang đăng nhập
+extends ../layouts/layout_1.pug
+include ../mixins/checkbox_1.pug
+
+block title
+  title Đăng nhập
+
+block main 
+  h1.inner_title Đăng nhập
+  .inner_desc Vui lòng nhập email và mật khẩu để tiếp tục
+  form  
+    .inner_group
+      label.inner_label(for="email") Email
+      input.inner_input#email(type="email" placeholder="Ví dụ: levana@gmail.com")
+    .inner_group
+      label.inner_label(for="pwd") Mật khẩu
+      input.inner_input#pwd(type="password")
+    .inner_meta 
+      +checkbox-1("rememberpwd", "Nhớ mật khẩu")
+      a(href="#") Quên mật khẩu?
+    button Đăng Nhập
+  .inner_more
+    span Bạn chưa có tài khoản?
+    a(href="#") Tạo tài khoản
