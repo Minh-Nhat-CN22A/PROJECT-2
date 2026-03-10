@@ -26,7 +26,7 @@ button {
 
 /* Page account */
 .page_account {
-  padding-top: 50px;
+  padding: 50px 0;
   background-image: url(../images/bg_img.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -152,6 +152,54 @@ button {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .inner_form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .page_account {
+    padding: 30px 0;
+  }
+
+  .inner_form {
+    width: 90%;
+    border-radius: 16px;
+    padding: 40px 20px;
+  }
+
+  .inner_form .inner_title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .inner_form .inner_desc {
+    margin-bottom: 26px;
+    font-size: 16px;
+  }
+
+  .inner_form form {
+    gap: 20px;
+  }
+
+  .inner_form form .inner_meta .checkbox-wrapper-1 label,
+  .inner_form form .inner_meta a {
+    font-size: 16px;
+  }
+
+  .inner_form .inner_more {
+    justify-content: space-between;
+  }
+
+  .inner_form .inner_more span {
+    font-size: 16px;
+  }
+
+  .inner_form .inner_more a {
+    font-size: 16px;
+  }
+}
 /* End Page account */
 
 /* .checkbox-wrapper-1 */
@@ -281,5 +329,12 @@ button {
 .checkbox-wrapper-1 [type="checkbox"].substituted + label {
   -webkit-user-select: none;
   user-select: none;
+}
+
+@media (max-width: 576px) {
+  .checkbox-wrapper-1 [type="checkbox"].substituted + label:before {
+    height: 0.85em;
+    width: 0.85em;
+  }
 }
 /* End .checkbox-wrapper-1 */
