@@ -1,0 +1,17 @@
+extends ../layouts/layout_1.pug
+include ../mixins/checkbox_1.pug
+
+block title
+  title Nhập mã OTP
+
+block main 
+  h1.inner_title Nhập mã OTP
+  .inner_desc Vui lòng nhập mã OTP để tiếp tục
+  form  
+    .inner_group
+      label.inner_label(for="text") Mã OTP
+      input.inner_input#text(type="text" placeholder="Ví dụ: 123456")
+    button Xác thực
+  .inner_more
+    span Bạn đã nhớ mật khẩu?
+    a(href="#") Đăng nhập
