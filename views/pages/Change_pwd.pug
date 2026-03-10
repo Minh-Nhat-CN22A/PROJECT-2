@@ -1,5 +1,4 @@
 extends ../layouts/layout_1.pug
-include ../mixins/checkbox_1.pug
 
 block title
   title Đổi mật khẩu
@@ -12,8 +11,8 @@ block main
       label.inner_label(for="pwd") Mật khẩu mới
       input.inner_input#pwd(type="password")
     .inner_group
-      label.inner_label(for="comfirm_pwd") Xác nhận mật khẩu
-      input.inner_input#comfirm_pwd(type="password")
+      label.inner_label(for="confirm_pwd") Xác nhận mật khẩu
+      input.inner_input#confirm_pwd(type="password")
     button Thay đổi
   .inner_more
     span Bạn đã nhớ mật khẩu?
