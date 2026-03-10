@@ -1,0 +1,17 @@
+extends ../layouts/layout_1.pug
+include ../mixins/checkbox_1.pug
+
+block title
+  title Quên mật khẩu
+
+block main 
+  h1.inner_title Quên mật khẩu
+  .inner_desc Vui lòng nhập email để tiếp tục
+  form  
+    .inner_group
+      label.inner_label(for="text") Email
+      input.inner_input#text(type="text" placeholder="Ví dụ: Lê Văn A")
+    button Gửi mã OTP
+  .inner_more
+    span Bạn đã nhớ mật khẩu?
+    a(href="#") Đăng nhập
