@@ -375,14 +375,62 @@ button {
 
 /* Main */
 .main {
-  background-color: purple;
+  background-color: #f5f6fa;
   width: calc(100% - 240px);
   min-height: calc(100vh - 70px);
   position: absolute;
   top: 70px;
   left: 240px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 /* End Main */
+
+/* SECTION 1 */
+.section_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section_1 .inner_item {
+  padding: 28px 0;
+  border-radius: 14px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section_1 .inner_item .inner_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.section_1 .inner_item .inner_text .inner_title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.section_1 .inner_item .inner_text .inner_number {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-text);
+}
+/* END SECTION 1 */
+
+/* BOX TITLE */
+.box_title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text);
+}
+/* END BOX TITLE */
 
 /* .checkbox-wrapper-1 */
 .checkbox-wrapper-1 *,
