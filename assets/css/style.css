@@ -463,6 +463,137 @@ button {
 }
 /* END SECTION 2 */
 
+/* SECTION 3 */
+.section_3 {
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 54px 0px #0000000d;
+  padding: 32px;
+}
+
+.section_3 .inner_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+/* END SECTION 3 */
+
+/* TABLE 1 */
+.table_1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table_1 thead th {
+  background-color: #f1f4f9;
+  padding: 14px 22px;
+  text-align: left;
+}
+
+.table_1 thead th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.table_1 thead th:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.table_1 tbody td {
+  padding: 10px 22px;
+  border-bottom: 0.4px solid rgba(151, 151, 151, 0.4);
+}
+
+.table_1 tbody > div {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+/* END TABLE 1 */
+
+/* TEXT MAIN */
+.text_main {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-main);
+}
+/* END TEXT MAIN */
+
+/* ALIGN */
+.align_right {
+  text-align: right !important;
+}
+/* END ALIGN */
+
+/* TOUR LIST */
+.tour_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tour_list .inner_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tour_list .inner_item img {
+  width: 76px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.tour_list .inner_item .inner_content {
+  flex: 1;
+}
+
+.tour_list .inner_item .inner_content .inner_name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  margin-bottom: 3px;
+}
+
+.tour_list .inner_item .inner_content .inner_price {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+/* END TOUR LIST */
+
+/* TAG */
+.tag {
+  display: inline-block;
+  border-radius: 4.5px;
+  padding: 5px 22px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.tag_orange {
+  background-color: rgba(255, 168, 86, 0.2);
+  color: #ffa756;
+}
+
+.tag_green {
+  background-color: rgba(0, 182, 155, 0.2);
+  color: #00b69b;
+}
+
+.tag_red {
+  background-color: rgba(239, 55, 38, 0.2);
+  color: #ef3826;
+}
+/* END TAG */
+
 /* BOX TITLE */
 .box_title {
   font-weight: 700;
