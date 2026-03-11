@@ -424,6 +424,45 @@ button {
 }
 /* END SECTION 1 */
 
+/* SECTION 2 */
+.section_2 {
+  height: 397px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 54px 0px #0000000d;
+  padding: 32px;
+}
+
+.section_2 .inner_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.section_2 .inner_head .inner_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+.section_2 .inner_head .inner_input {
+  border-radius: 4px;
+  background-color: #fcfdfd;
+  border: 0.6px solid #d5d5d5;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2b303466;
+  padding: 0 16px;
+  height: 28px;
+}
+
+.section_2 .inner_chart {
+  background-color: gray;
+  height: 273px;
+}
+/* END SECTION 2 */
+
 /* BOX TITLE */
 .box_title {
   font-weight: 700;
