@@ -1,4 +1,5 @@
 extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
 
 block title 
   title Quản lý danh mục
@@ -46,3 +47,40 @@ block main
           input(type="text" placeholder="Tìm kiếm")
         a.inner_create(href="#") + Tạo mới 
     //- END SECTION 5
+
+    //- SECTION 6
+    .section_6 
+      .table_2 
+        table 
+          thead 
+            tr 
+              th.align_center
+                +checkbox-1("check_all")
+              th Tên danh mục
+              th.align_center Ảnh đại diện
+              th.align_center Vị trí
+              th.align_center Trạng thái
+              th Tạo bởi
+              th Cập nhật bởi
+              th Hành động
+          tbody 
+            tr 
+              td.align_center 
+                +checkbox-1("check")
+              td Danh mục 1
+              td.align_center 
+                img(src="assets/images/tour_1.png", alt="tour image")
+              td.align_center 1
+              td.align_center 
+                .tag.tag_green Hoạt động
+              td 
+                div Lê Văn A
+                .inner_time 16:30 - 20/10/2024
+              td 
+                div Lê Văn A
+                .inner_time 16:30 - 20/10/2024
+              td 
+                .box_action 
+                  a(href="#") <i class="fa-solid fa-pen-to-square"></i>
+                  a(href="#") <i class="fa-solid fa-trash-can"></i>
+    //- END SECTION 6
