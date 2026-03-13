@@ -1,0 +1,33 @@
+extends ../layouts/layout_2.pug
+
+block title 
+  title Quản lý danh mục
+
+block main
+  main.main
+    .box_title Quản lý danh mục
+
+    //- SECTION 4
+    .section_4 
+      .inner_wrap
+        .inner_item 
+          <i class="fa-solid fa-filter"></i>
+          span Bộ lọc
+        .inner_item 
+          select(name="")
+            option(value="") Trạng thái  
+            option(value="") Hoạt động  
+            option(value="") Tạm dừng  
+        .inner_item 
+          select(name="")
+            option(value="") Người tạo  
+            option(value="") Lê Văn A  
+            option(value="") Lê Văn B
+        .inner_item 
+          input(type="date")
+          span -
+          input(type="date")
+        .inner_item.inner_reset 
+          <i class="fa-solid fa-rotate-left"></i>
+          span Xóa bộ lọc
+    //- END SECTION 4

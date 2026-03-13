@@ -550,6 +550,51 @@ button {
 }
 /* END SECTION 3 */
 
+/* SECTION 4 */
+.section_4 {
+  margin-bottom: 15px;
+}
+
+.section_4 .inner_wrap {
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 0.6px solid #d5d5d5;
+  display: inline-flex;
+  align-items: center;
+}
+
+.section_4 .inner_item {
+  padding: 24px;
+  border-right: 0.6px solid #d5d5d5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.section_4 .inner_item:last-child {
+  border-right: 0;
+}
+
+.section_4 .inner_item select,
+.section_4 .inner_item input {
+  border: 0;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.section_4 .inner_item.inner_reset {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ea0234;
+}
+/* END SECTION 4 */
+
 /* TABLE 1 */
 .table_1 {
   overflow-x: auto;
