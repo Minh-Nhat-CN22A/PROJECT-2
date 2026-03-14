@@ -59,6 +59,23 @@
           <input type="date"/><span>-</span>
           <input type="date"/>
         </div>
+        <div class="inner_item"> 
+          <select name="">
+            <option value="">Danh mục  </option>
+            <option value="">Danh mục 1</option>
+            <option value="">Danh mục 2</option>
+          </select>
+        </div>
+        <div class="inner_item"> 
+          <select name="">
+            <option value="">Mức giá  </option>
+            <option value="">Dưới 1 triệu</option>
+            <option value="">Từ 1 triệu đến 3 triệu</option>
+            <option value="">Từ 3 triệu đến 6 triệu</option>
+            <option value="">Từ 6 triệu đến 10 triệu</option>
+            <option value="">Trên 10 triệu</option>
+          </select>
+        </div>
         <div class="inner_item inner_reset">
            <i class="fa-solid fa-rotate-left"></i><span>Xóa bộ lọc</span></div>
       </div>
@@ -76,7 +93,7 @@
         <form class="inner_search"> 
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
           <input type="text" placeholder="Tìm kiếm"/>
-        </form><a class="inner_create" href="#">+ Tạo mới </a>
+        </form><a class="inner_create" href="#">+ Tạo mới </a><a class="inner_trash" href="#">Thùng rác</a>
       </div>
     </div>
     <div class="section_6"> 
@@ -90,8 +107,10 @@
                   <label for="check_all"></label>
                 </div>
               </th>
-              <th>Tên danh mục</th>
+              <th>Tên tour</th>
               <th class="align_center">Ảnh đại diện</th>
+              <th>Giá</th>
+              <th>Còn lại</th>
               <th class="align_center">Vị trí</th>
               <th class="align_center">Trạng thái</th>
               <th>Tạo bởi</th>
@@ -107,8 +126,18 @@
                   <label for="check"></label>
                 </div>
               </td>
-              <td>Danh mục 1</td>
+              <td>Tour Hạ Long</td>
               <td class="align_center"> <img src="assets/images/tour_1.png" alt="tour image"/></td>
+              <td>
+                <div>NL: 1.900.000đ</div>
+                <div>TE: 1.600.000đ</div>
+                <div>EB: 1.000.000đ</div>
+              </td>
+              <td>
+                <div>NL: 30</div>
+                <div>TE: 20</div>
+                <div>EB: 10</div>
+              </td>
               <td class="align_center">1</td>
               <td class="align_center"> 
                 <div class="tag tag_green">Hoạt động</div>

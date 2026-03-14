@@ -29,6 +29,19 @@ block main
           input(type="date")
           span -
           input(type="date")
+        .inner_item 
+          select(name="")
+            option(value="") Danh mục  
+            option(value="") Danh mục 1
+            option(value="") Danh mục 2
+        .inner_item 
+          select(name="")
+            option(value="") Mức giá  
+            option(value="") Dưới 1 triệu
+            option(value="") Từ 1 triệu đến 3 triệu
+            option(value="") Từ 3 triệu đến 6 triệu
+            option(value="") Từ 6 triệu đến 10 triệu
+            option(value="") Trên 10 triệu
         .inner_item.inner_reset 
           <i class="fa-solid fa-rotate-left"></i>
           span Xóa bộ lọc
@@ -47,6 +60,7 @@ block main
           button <i class="fa-solid fa-magnifying-glass"></i>
           input(type="text" placeholder="Tìm kiếm")
         a.inner_create(href="#") + Tạo mới 
+        a.inner_trash(href="#") Thùng rác
     //- END SECTION 5
 
     //- SECTION 6
@@ -57,8 +71,10 @@ block main
             tr 
               th.align_center
                 +checkbox-1("check_all")
-              th Tên danh mục
+              th Tên tour
               th.align_center Ảnh đại diện
+              th Giá
+              th Còn lại
               th.align_center Vị trí
               th.align_center Trạng thái
               th Tạo bởi
@@ -68,9 +84,17 @@ block main
             tr 
               td.align_center 
                 +checkbox-1("check")
-              td Danh mục 1
+              td Tour Hạ Long
               td.align_center 
                 img(src="assets/images/tour_1.png", alt="tour image")
+              td
+                div NL: 1.900.000đ
+                div TE: 1.600.000đ
+                div EB: 1.000.000đ
+              td
+                div NL: 30
+                div TE: 20
+                div EB: 10
               td.align_center 1
               td.align_center 
                 .tag.tag_green Hoạt động
@@ -87,5 +111,5 @@ block main
     //- END SECTION 6
 
     //- SECTION 7
-    +section-7()
+    +section-7() 
     //- END SECTION 7
