@@ -418,9 +418,6 @@ button {
   top: 70px;
   left: 240px;
   padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 @media (max-width: 992px) {
@@ -442,6 +439,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .section_1 .inner_item {
@@ -485,6 +483,7 @@ button {
   background-color: #ffffff;
   box-shadow: 6px 6px 54px 0px #0000000d;
   padding: 32px;
+  margin-bottom: 30px;
 }
 
 .section_2 .inner_head {
@@ -534,6 +533,7 @@ button {
   background-color: #ffffff;
   box-shadow: 6px 6px 54px 0px #0000000d;
   padding: 32px;
+  margin-bottom: 30px;
 }
 
 .section_3 .inner_title {
@@ -685,6 +685,34 @@ button {
   color: #ffffff;
 }
 /* END SECTION 5 */
+
+/* SECTION 7 */
+.section_7 {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section_7 .inner_text {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.section_7 select {
+  border-radius: 8px;
+  background-color: #fafbfd;
+  border: 0.6px solid #d5d5d5;
+  padding: 6px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* END SECTION 7 */
 
 /* TABLE 2 */
 .table_2 table {
