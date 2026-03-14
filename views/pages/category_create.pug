@@ -1,0 +1,40 @@
+extends ../layouts/layout_2.pug
+
+block title 
+  title Tạo danh mục
+
+block main
+  main.main
+    .box_title Tạo danh mục
+
+    //- SECTION 8
+    .section_8 
+      form
+        .inner_group
+          label.inner_label(for="category") Tên danh mục
+          input.inner_control#category(type="text" placeholder="Danh mục 2")
+        .inner_group
+          label.inner_label(for="choose_category") Danh mục cha
+          select.inner_control#choose_category
+            option(value="") -- Chọn danh mục --
+            option(value="") Danh mục 1
+            option(value="") Danh mục 2
+        .inner_group
+          label.inner_label(for="location") Vị trí
+          input.inner_control#location(type="text" value="1")
+        .inner_group
+          label.inner_label(for="status") Trạng thái
+          select.inner_control#status
+            option(value="") Hoạt động
+            option(value="") Tạm dừng
+        .inner_group.inner_2_cols
+          label.inner_label(for="file") Ảnh đại diện
+          input.inner_control#file(type="file")
+        .inner_group.inner_2_cols
+          label.inner_label(for="desc") Mô tả
+          textarea.inner_control#desc Mô tả danh mục 2...
+        .inner_group.inner_2_cols 
+          button Tạo mới
+      .inner_back 
+        a(href="#") Quay lại danh sách 
+    //- END SECTION 8

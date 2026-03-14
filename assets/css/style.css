@@ -821,6 +821,90 @@ button {
 }
 /* END SECTION 7 */
 
+/* SECTION 8 */
+.section_8 {
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 0.3px solid #b9b9b9;
+  padding: 50px;
+}
+
+.section_8 form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.section_8 .inner_group {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.section_8 .inner_group .inner_label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+}
+
+.section_8 .inner_group .inner_control {
+  border-radius: 4px;
+  background-color: #f5f6fa;
+  border: 0.6px solid #d5d5d5;
+  padding: 15px 22px;
+}
+
+.section_8 .inner_group .inner_control,
+.section_8 .inner_group .inner_control::placeholder {
+  font-weight: 500;
+  font-size: 14;
+  color: var(--color-text);
+}
+
+.section_8 .inner_group.inner_2_cols {
+  grid-column: span 2;
+}
+
+.section_8 .inner_group.inner_2_cols textarea {
+  height: 160px;
+}
+
+.section_8 .inner_group.inner_2_cols:last-child {
+  display: block;
+  text-align: center;
+}
+
+.section_8 .inner_group.inner_2_cols button {
+  border-radius: 12px;
+  background-color: var(--color-main);
+  border: 0;
+  opacity: 0.9;
+  padding: 16px 0;
+  width: 274px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.section_8 .inner_group.inner_2_cols button:hover {
+  opacity: 1;
+}
+
+.section_8 .inner_back {
+  text-align: center;
+}
+
+.section_8 .inner_back a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #5a8cff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* END SECTION 8 */
+
 /* TABLE 2 */
 .table_2 {
   overflow-x: auto;
@@ -1026,6 +1110,7 @@ button {
   font-weight: 700;
   font-size: 32px;
   color: var(--color-text);
+  margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
