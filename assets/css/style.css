@@ -560,7 +560,6 @@ button {
   background-color: #ffffff;
   border: 0.6px solid #d5d5d5;
   display: inline-flex;
-  align-items: center;
 }
 
 .section_4 .inner_item {
@@ -592,6 +591,65 @@ button {
   font-weight: 600;
   font-size: 14px;
   color: #ea0234;
+}
+
+@media (max-width: 1200px) {
+  .section_4 .inner_item {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_4 .inner_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section_4 .inner_item {
+    border-bottom: 0.6px solid #d5d5d5;
+    justify-content: center;
+  }
+
+  .section_4 .inner_item:nth-child(3) {
+    border-right: 0;
+  }
+
+  .section_4 .inner_item:nth-child(4) {
+    grid-column: span 2;
+    border-bottom: 0;
+  }
+
+  .section_4 .inner_item:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section_4 .inner_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section_4 .inner_item {
+    border-right: 0;
+  }
+
+  .section_4 .inner_item:first-child {
+    grid-column: span 2;
+  }
+
+  .section_4 .inner_item:last-child {
+    grid-column: span 2;
+  }
+
+  .section_4 .inner_item:nth-child(3) {
+    border-left: 0.6px solid #d5d5d5;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .section_4 .inner_item:nth-child(4) {
+    border-bottom: 0.6px solid #d5d5d5;
+  }
 }
 /* END SECTION 4 */
 
@@ -712,9 +770,62 @@ button {
   opacity: 0.6;
   cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+  .section_5 .inner_wrap {
+    flex-wrap: wrap;
+  }
+
+  .section_5 .inner_change_status select,
+  .section_5 .inner_change_status button {
+    padding: 10px;
+  }
+
+  .section_5 .inner_change_status button {
+    margin-left: 10px;
+  }
+
+  .section_5 .inner_search {
+    padding: 10px;
+  }
+
+  .section_5 .inner_create {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_5 .inner_wrap {
+    gap: 10px;
+  }
+
+  .section_5 .inner_change_status {
+    width: 100%;
+  }
+
+  .section_5 .inner_change_status select {
+    width: 70%;
+  }
+
+  .section_5 .inner_change_status button {
+    flex: 1;
+  }
+
+  .section_5 .inner_search {
+    max-width: 100%;
+  }
+
+  .section_5 .inner_create {
+    width: 100%;
+  }
+}
 /* END SECTION 7 */
 
 /* TABLE 2 */
+.table_2 {
+  overflow-x: auto;
+}
+
 .table_2 table {
   border-radius: 14px;
   background-color: #ffffff;
@@ -722,6 +833,7 @@ button {
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
+  min-width: 1142px;
 }
 
 .table_2 thead th {
