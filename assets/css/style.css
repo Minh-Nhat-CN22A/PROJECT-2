@@ -903,6 +903,26 @@ button {
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .section_8 {
+    padding: 20px;
+  }
+
+  .section_8 form {
+    grid-template-columns: 1fr;
+  }
+
+  .section_8 .inner_group.inner_2_cols {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .section_8 {
+    padding: 15px;
+  }
+}
 /* END SECTION 8 */
 
 /* TABLE 2 */
