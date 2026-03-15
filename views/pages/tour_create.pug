@@ -1,0 +1,120 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+
+block title 
+  title Tạo tour
+
+block main
+  main.main
+    .box_title Tạo tour
+
+    //- SECTION 8
+    .section_8 
+      form
+        .inner_group
+          label.inner_label(for="tour_name") Tên tour
+          input.inner_control#tour_name(type="text" placeholder="Tour Hạ Long")
+        .inner_group
+          label.inner_label(for="choose_category") Danh mục
+          select.inner_control#choose_category
+            option(value="") -- Chọn danh mục --
+            option(value="") Danh mục 1
+            option(value="") Danh mục 2
+        .inner_group
+          label.inner_label(for="location") Vị trí
+          input.inner_control#location(type="text" value="1")
+        .inner_group
+          label.inner_label(for="status") Trạng thái
+          select.inner_control#status
+            option(value="") Hoạt động
+            option(value="") Tạm dừng
+        .inner_group.inner_2_cols
+          label.inner_label(for="file") Ảnh đại diện
+          input.inner_control#file(type="file")
+        .inner_group.inner_list 
+          label.inner_label Giá cũ
+          .inner_input_list
+            .inner_input_item 
+              label Người lớn
+              input(type="number") 
+            .inner_input_item
+              label Trẻ em
+              input(type="number") 
+            .inner_input_item
+              label Em bé
+              input(type="number") 
+        .inner_group.inner_list 
+          label.inner_label Giá mới
+          .inner_input_list
+            .inner_input_item 
+              label Người lớn
+              input(type="number") 
+            .inner_input_item
+              label Trẻ em
+              input(type="number") 
+            .inner_input_item
+              label Em bé
+              input(type="number") 
+        .inner_group.inner_list 
+          label.inner_label Còn lại
+          .inner_input_list
+            .inner_input_item 
+              label Người lớn
+              input(type="number") 
+            .inner_input_item
+              label Trẻ em
+              input(type="number") 
+            .inner_input_item
+              label Em bé
+              input(type="number") 
+        .inner_group.inner_list 
+          label.inner_label Những địa điểm có tour
+          .inner_checkbox_list
+            +checkbox-1("checkbox-1","Hà Nội")
+            +checkbox-1("checkbox-2","Đà Nẵng")
+            +checkbox-1("checkbox-3","Nha Trang")
+            +checkbox-1("checkbox-4","Hồ Chí Minh")
+        .inner_group
+          label.inner_label(for="time") Thời gian
+          input.inner_control#time(type="text" placeholder="6 Ngày 5 Đêm")
+        .inner_group
+          label.inner_label(for="vehicle") Phương tiện
+          input.inner_control#vehicle(type="text" placeholder="Ô tô 45 chỗ")
+        .inner_group
+          label.inner_label(for="start") Ngày khởi hành
+          input.inner_control#start(type="text" placeholder="12/12/2024")
+        .inner_group.inner_2_cols
+          label.inner_label(for="desc") Thông tin tour
+          textarea.inner_control#desc Thông tin tour...
+        .inner_group.inner_2_cols
+          label.inner_label(for="desc") Lịch trình tour
+          .inner_schedule 
+            .inner_schedule_list 
+              .inner_schedule_item 
+                .inner_schedule_head 
+                  .inner_btn.inner_move 
+                    <i class="fa-solid fa-up-down-left-right"></i>
+                  input(type="text")
+                  .inner_btn.inner_remove 
+                    <i class="fa-solid fa-trash-can"></i>
+                  .inner_btn.inner_more
+                    <i class="fa-solid fa-angle-down"></i>
+                .inner_schedule_body 
+                  textarea Nội dung chi tiết ngày 1...
+              .inner_schedule_item 
+                .inner_schedule_head 
+                  .inner_btn.inner_move 
+                    <i class="fa-solid fa-up-down-left-right"></i>
+                  input(type="text")
+                  .inner_btn.inner_remove 
+                    <i class="fa-solid fa-trash-can"></i>
+                  .inner_btn.inner_more
+                    <i class="fa-solid fa-angle-down"></i>
+                .inner_schedule_body 
+                  textarea Nội dung chi tiết ngày 1...
+            .inner_schedule_create + Thêm lich trình
+        .inner_group.inner_2_cols 
+          button Tạo mới
+      .inner_back 
+        a(href="#") Quay lại danh sách 
+    //- END SECTION 8
