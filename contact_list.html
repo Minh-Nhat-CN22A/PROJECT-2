@@ -1,0 +1,111 @@
+<!DOCTYPE html >
+<html>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thông tin liên hệ</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</html>
+<body> 
+  <header class="header"><a class="inner_logo" href="#"> <span>28</span><span>Admin</span></a>
+    <div class="inner_wrap"> 
+      <div class="inner_notify"><img src="assets/images/icon_bell.svg" alt="bell icon"/><span>6</span></div>
+      <div class="inner_account"> <img src="assets/images/logo.png" alt="account avatar"/>
+        <div class="inner_text"> 
+          <div class="inner_name">Le Van A</div>
+          <div class="inner_role">Admin</div>
+        </div>
+      </div>
+      <button class="inner_btn_menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+  <Aside class="sider"> 
+    <ul class="inner_menu"> 
+      <li> <a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Tổng quan</a></li>
+      <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Quản lý danh mục </a></li>
+      <li><a href="#"><i class="fa-solid fa-table-list"></i> Quản lý tour </a></li>
+      <li><a href="#"><i class="fa-solid fa-list-check"></i> Quản lý đơn hàng </a></li>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Quản lý người dùng </a></li>
+      <li><a href="#"><i class="fa-solid fa-user-group"></i> Thông tin liên hệ </a></li>
+    </ul>
+    <hr/>
+    <ul class="inner_menu">
+      <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt chung</a></li>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Thông tin cá nhân</a></li>
+      <li><a class="inner_logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
+    </ul>
+  </Aside>
+  <main class="main">
+    <div class="box_title">Thông tin liên hệ</div>
+    <div class="section_4"> 
+      <div class="inner_wrap">
+        <div class="inner_item">
+           <i class="fa-solid fa-filter"></i><span>Bộ lọc</span></div>
+        <div class="inner_item"> 
+          <input type="date"/><span>-</span>
+          <input type="date"/>
+        </div>
+        <div class="inner_item inner_reset">
+           <i class="fa-solid fa-rotate-left"></i><span>Xóa bộ lọc</span></div>
+      </div>
+    </div>
+    <div class="section_5">
+      <div class="inner_wrap"> 
+        <form class="inner_change_status"> 
+          <select name="">
+            <option value="">-- Hành động --</option>
+            <option value="">-- Tạm dừng --</option>
+            <option value="">-- Hoạt động --</option>
+          </select>
+          <button>Áp dụng</button>
+        </form>
+        <form class="inner_search"> 
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" placeholder="Tìm kiếm"/>
+        </form>
+      </div>
+    </div>
+    <div class="section_6"> 
+      <div class="table_2"> 
+        <table> 
+          <thead> 
+            <tr> 
+              <th class="align_center">
+                <div class="checkbox-wrapper-1">
+                  <input class="substituted" aria-hidden="true" type="checkbox" id="check_all"/>
+                  <label for="check_all"></label>
+                </div>
+              </th>
+              <th>Email</th>
+              <th>Ngày tạo</th>
+              <th class="align_center">Hành động</th>
+            </tr>
+          </thead>
+          <tbody> 
+            <tr> 
+              <td class="align_center"> 
+                <div class="checkbox-wrapper-1">
+                  <input class="substituted" aria-hidden="true" type="checkbox" id="check"/>
+                  <label for="check"></label>
+                </div>
+              </td>
+              <td>levana@gmail.com</td>
+              <td>16:40 - 12/12/2024</td>
+              <td class="align_center"> 
+                <div class="box_action"><a href="#"><i class="fa-solid fa-trash-can"></i></a></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="section_7"> 
+      <div class="inner_text">Hiển thị 1 - 9 của 78</div>
+      <select name="">
+        <option value="">Trang 1 </option>
+        <option value="">Trang 2 </option>
+        <option value="">Trang 3</option>
+      </select>
+    </div>
+  </main>
+</body>

@@ -1,0 +1,65 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+include ../mixins/section_7.pug
+
+block title 
+  title Thông tin liên hệ
+
+block main
+  main.main
+    .box_title Thông tin liên hệ
+
+    //- SECTION 4
+    .section_4 
+      .inner_wrap
+        .inner_item 
+          <i class="fa-solid fa-filter"></i>
+          span Bộ lọc
+        .inner_item 
+          input(type="date")
+          span -
+          input(type="date")
+        .inner_item.inner_reset 
+          <i class="fa-solid fa-rotate-left"></i>
+          span Xóa bộ lọc
+    //- END SECTION 4
+
+    //- SECTION 5
+    .section_5
+      .inner_wrap 
+        form.inner_change_status 
+          select(name="")
+            option(value="") -- Hành động --
+            option(value="") -- Tạm dừng --
+            option(value="") -- Hoạt động --
+          button Áp dụng
+        form.inner_search 
+          button <i class="fa-solid fa-magnifying-glass"></i>
+          input(type="text" placeholder="Tìm kiếm")
+    //- END SECTION 5
+
+    //- SECTION 6
+    .section_6 
+      .table_2 
+        table 
+          thead 
+            tr 
+              th.align_center
+                +checkbox-1("check_all")
+              th Email
+              th Ngày tạo
+              th.align_center Hành động
+          tbody 
+            tr 
+              td.align_center 
+                +checkbox-1("check")
+              td levana@gmail.com
+              td 16:40 - 12/12/2024
+              td.align_center 
+                .box_action
+                  a(href="#") <i class="fa-solid fa-trash-can"></i>
+    //- END SECTION 6
+
+    //- SECTION 7
+    +section-7() 
+    //- END SECTION 7
