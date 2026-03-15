@@ -1,0 +1,116 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+include ../mixins/section_7.pug
+
+block title 
+  title Quản lý đơn hàng
+
+block main
+  main.main
+    .box_title Quản lý đơn hàng
+
+    //- SECTION 4
+    .section_4 
+      .inner_wrap
+        .inner_item 
+          <i class="fa-solid fa-filter"></i>
+          span Bộ lọc
+        .inner_item 
+          select(name="")
+            option(value="") Trạng thái  
+            option(value="") Hoạt động  
+            option(value="") Tạm dừng  
+        .inner_item 
+          select(name="")
+            option(value="") Người tạo  
+            option(value="") Lê Văn A  
+            option(value="") Lê Văn B
+        .inner_item 
+          input(type="date")
+          span -
+          input(type="date")
+        .inner_item 
+          select(name="")
+            option(value="") Phương thức thanh toán  
+            option(value="") VNPAY
+            option(value="") Zalo Pay
+        .inner_item 
+          select(name="")
+            option(value="") Trạng thái thanh toán  
+            option(value="") Đã thanh toán
+            option(value="") Chưa thanh toán
+        .inner_item.inner_reset 
+          <i class="fa-solid fa-rotate-left"></i>
+          span Xóa bộ lọc
+    //- END SECTION 4
+
+    //- SECTION 5
+    .section_5
+      .inner_wrap 
+        form.inner_search 
+          button <i class="fa-solid fa-magnifying-glass"></i>
+          input(type="text" placeholder="Tìm kiếm")
+    //- END SECTION 5
+
+    //- SECTION 6
+    .section_6 
+      .table_2 
+        table 
+          thead 
+            tr 
+              th Mã
+              th Thông tin khách
+              th Danh sách tour
+              th Thanh toán
+              th Trạng thái
+              th.align_center Ngày đặt
+              th Hành động
+          tbody 
+            tr 
+              td
+                .text_main OD000001
+              td 
+                div Họ tên: Lê Văn A
+                div SĐT: 0123456789
+                div Ghi chú: Test...
+              td 
+                .tour_list 
+                  .inner_item 
+                    img(src="assets/images/tour_1.png", alt="tour picture")
+                    .inner_content 
+                      .inner_name Tour Hạ Long
+                      .inner_price 
+                        div Người lớn: 3 x 1.500.000đ
+                        div Trẻ em: 2 x 1.300.000đ
+                        div Em bé: 2 x 1.000.000đ
+                  .inner_item 
+                    img(src="assets/images/tour_1.png", alt="tour picture")
+                    .inner_content 
+                      .inner_name Tour Hạ Long
+                      .inner_price 
+                        div Người lớn: 3 x 1.500.000đ
+                        div Trẻ em: 2 x 1.300.000đ
+                        div Em bé: 2 x 1.000.000đ
+              td 
+                div Tổng tiền: 10.000.000đ
+                div Giảm: 400.000đ
+                div Mã giảm: TOURMUAHE2024
+                div Thanh toán: 9.600.000đ
+                div PTTT: Ví Momo
+                div TTTT: Đã thanh toán
+              td 
+                //- .tag.tag_orange Khởi tạo
+                //- .tag.tag_green Đã duyệt
+                .tag.tag_red Đã hủy
+              td.align_center
+                div 16:20
+                div 01/01/2024
+              td 
+                .box_action 
+                  a(href="#") <i class="fa-solid fa-pen-to-square"></i>
+                  a(href="#") <i class="fa-solid fa-trash-can"></i>
+    //- END SECTION 6
+
+    //- SECTION 7
+    +section-7() 
+    //- END SECTION 7

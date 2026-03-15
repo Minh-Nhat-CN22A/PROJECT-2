@@ -1088,7 +1088,7 @@ button {
 }
 
 .table_2 thead th:first-child {
-  padding: 0 15px;
+  padding: 0 24px;
 }
 
 .table_2 tbody td {
@@ -1100,7 +1100,7 @@ button {
 }
 
 .table_2 tbody td:first-child {
-  padding: 0 15px;
+  padding: 0 24px;
 }
 
 .table_2 tbody td img {
