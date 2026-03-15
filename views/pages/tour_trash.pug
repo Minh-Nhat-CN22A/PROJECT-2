@@ -1,0 +1,75 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+include ../mixins/section_7.pug
+
+block title 
+  title Thùng rác tour
+
+block main
+  main.main
+    .box_title Thùng rác tour
+
+    //- SECTION 5
+    .section_5
+      .inner_wrap 
+        form.inner_change_status 
+          select(name="")
+            option(value="") -- Hành động --
+            option(value="") -- Tạm dừng --
+            option(value="") -- Hoạt động --
+          button Áp dụng
+        form.inner_search 
+          button <i class="fa-solid fa-magnifying-glass"></i>
+          input(type="text" placeholder="Tìm kiếm")
+    //- END SECTION 5
+
+    //- SECTION 6
+    .section_6 
+      .table_2 
+        table 
+          thead 
+            tr 
+              th.align_center
+                +checkbox-1("check_all")
+              th Tên tour
+              th.align_center Ảnh đại diện
+              th Giá
+              th Còn lại
+              th.align_center Vị trí
+              th.align_center Trạng thái
+              th Tạo bởi
+              th Xóa bởi
+              th Hành động
+          tbody 
+            tr 
+              td.align_center 
+                +checkbox-1("check")
+              td Tour Hạ Long
+              td.align_center 
+                img(src="assets/images/tour_1.png", alt="tour image")
+              td
+                div NL: 1.900.000đ
+                div TE: 1.600.000đ
+                div EB: 1.000.000đ
+              td
+                div NL: 30
+                div TE: 20
+                div EB: 10
+              td.align_center 1
+              td.align_center 
+                .tag.tag_green Hoạt động
+              td 
+                div Lê Văn A
+                .inner_time 16:30 - 20/10/2024
+              td 
+                div Lê Văn A
+                .inner_time 16:30 - 20/10/2024
+              td 
+                .box_action 
+                  a(href="#") <i class="fa-solid fa-rotate-left"></i>
+                  a(href="#") <i class="fa-solid fa-trash-can"></i>
+    //- END SECTION 6
+
+    //- SECTION 7
+    +section-7() 
+    //- END SECTION 7
