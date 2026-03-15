@@ -1020,6 +1020,22 @@ button {
   opacity: 1;
 }
 
+.section_8 .tour_list .inner_item img {
+  width: 115px;
+}
+
+.section_8 .inner_order_total {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+.section_8 .inner_order_total span {
+  font-weight: 700;
+  color: #ef3826;
+}
+
 @media (max-width: 1200px) {
   .section_8 .inner_group.inner_list .inner_input_item input {
     width: 0;

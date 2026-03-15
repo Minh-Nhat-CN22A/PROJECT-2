@@ -1,0 +1,125 @@
+<!DOCTYPE html >
+<html>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit đơn hàng</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</html>
+<body> 
+  <header class="header"><a class="inner_logo" href="#"> <span>28</span><span>Admin</span></a>
+    <div class="inner_wrap"> 
+      <div class="inner_notify"><img src="assets/images/icon_bell.svg" alt="bell icon"/><span>6</span></div>
+      <div class="inner_account"> <img src="assets/images/logo.png" alt="account avatar"/>
+        <div class="inner_text"> 
+          <div class="inner_name">Le Van A</div>
+          <div class="inner_role">Admin</div>
+        </div>
+      </div>
+      <button class="inner_btn_menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+  <Aside class="sider"> 
+    <ul class="inner_menu"> 
+      <li> <a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Tổng quan</a></li>
+      <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Quản lý danh mục </a></li>
+      <li><a href="#"><i class="fa-solid fa-table-list"></i> Quản lý tour </a></li>
+      <li><a href="#"><i class="fa-solid fa-list-check"></i> Quản lý đơn hàng </a></li>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Quản lý người dùng </a></li>
+      <li><a href="#"><i class="fa-solid fa-user-group"></i> Thông tin liên hệ </a></li>
+    </ul>
+    <hr/>
+    <ul class="inner_menu">
+      <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt chung</a></li>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Thông tin cá nhân</a></li>
+      <li><a class="inner_logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
+    </ul>
+  </Aside>
+  <main class="main">
+    <div class="box_title">Đơn hàng: OD000001</div>
+    <div class="section_8"> 
+      <form>
+        <div class="inner_group">
+          <label class="inner_label" for="name">Tên khách hàng</label>
+          <input class="inner_control" id="name" type="text" value="Lê Văn A"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="location">Số điện thoại</label>
+          <input class="inner_control" id="location" type="text" value="0123456789"/>
+        </div>
+        <div class="inner_group inner_2_cols">
+          <label class="inner_label" for="note">Ghi chú</label>
+          <textarea class="inner_control" id="note">Test...</textarea>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="payment">Phương thức thanh toán</label>
+          <select class="inner_control" id="payment">
+            <option value="">Ví Momo</option>
+            <option value="">VNPAY</option>
+          </select>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="payment_status">Trạng thái thanh toán</label>
+          <select class="inner_control" id="payment_status">
+            <option value="">Đã thanh toán</option>
+            <option value="">Chưa thanh toán</option>
+          </select>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="date">Ngày đặt</label>
+          <input class="inner_control" id="date" type="text" value="16:40 - 01/01/2024"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="status">Trạng thái</label>
+          <select class="inner_control" id="status">
+            <option value="">Khởi tạo</option>
+            <option value="">Đã hoàn tất</option>
+            <option value="">Đã hủy</option>
+          </select>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="">Danh sách tour</label>
+          <div class="tour_list"> 
+            <div class="inner_item"> <img src="assets/images/tour_1.png" alt="tour picture"/>
+              <div class="inner_content"> 
+                <div class="inner_name">Tour Hạ Long</div>
+                <div class="inner_price"> 
+                  <div>Người lớn: 3 x 1.500.000đ</div>
+                  <div>Trẻ em: 2 x 1.300.000đ</div>
+                  <div>Em bé: 2 x 1.000.000đ</div>
+                  <div>Ngày khởi hành: 20/10/2024</div>
+                  <div>Khởi hành tại: Hà Nội</div>
+                </div>
+              </div>
+            </div>
+            <div class="inner_item"> <img src="assets/images/tour_1.png" alt="tour picture"/>
+              <div class="inner_content"> 
+                <div class="inner_name">Tour Hạ Long</div>
+                <div class="inner_price"> 
+                  <div>Người lớn: 3 x 1.500.000đ</div>
+                  <div>Trẻ em: 2 x 1.300.000đ</div>
+                  <div>Em bé: 2 x 1.000.000đ</div>
+                  <div>Ngày khởi hành: 20/10/2024</div>
+                  <div>Khởi hành tại: Hà Nội</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="">Thanh toán</label>
+          <div class="inner_order_total"> 
+            <div>Tổng tiền: 10.000.000đ</div>
+            <div>Giảm: 400.000đ</div>
+            <div>Mã giảm: TOURMUAHE2024</div>
+            <div>Thanh toán: <span>9.600.000đ</span></div>
+          </div>
+        </div>
+        <div class="inner_group inner_2_cols"> 
+          <button>Cập nhật</button>
+        </div>
+      </form>
+      <div class="inner_back"> <a href="#">Quay lại danh sách </a></div>
+    </div>
+  </main>
+</body>

@@ -1,0 +1,75 @@
+extends ../layouts/layout_2.pug
+
+block title 
+  title Edit đơn hàng
+
+block main
+  main.main
+    .box_title Đơn hàng: OD000001
+
+    //- SECTION 8
+    .section_8 
+      form
+        .inner_group
+          label.inner_label(for="name") Tên khách hàng
+          input.inner_control#name(type="text" value="Lê Văn A")
+        .inner_group
+          label.inner_label(for="location") Số điện thoại
+          input.inner_control#location(type="text" value="0123456789")
+        .inner_group.inner_2_cols
+          label.inner_label(for="note") Ghi chú
+          textarea.inner_control#note Test...
+        .inner_group
+          label.inner_label(for="payment") Phương thức thanh toán
+          select.inner_control#payment
+            option(value="") Ví Momo
+            option(value="") VNPAY
+        .inner_group
+          label.inner_label(for="payment_status") Trạng thái thanh toán
+          select.inner_control#payment_status
+            option(value="") Đã thanh toán
+            option(value="") Chưa thanh toán
+        .inner_group
+          label.inner_label(for="date") Ngày đặt
+          input.inner_control#date(type="text" value="16:40 - 01/01/2024")
+        .inner_group
+          label.inner_label(for="status") Trạng thái
+          select.inner_control#status
+            option(value="") Khởi tạo
+            option(value="") Đã hoàn tất
+            option(value="") Đã hủy
+        .inner_group
+          label.inner_label(for="") Danh sách tour
+          .tour_list 
+            .inner_item 
+              img(src="assets/images/tour_1.png", alt="tour picture")
+              .inner_content 
+                .inner_name Tour Hạ Long
+                .inner_price 
+                  div Người lớn: 3 x 1.500.000đ
+                  div Trẻ em: 2 x 1.300.000đ
+                  div Em bé: 2 x 1.000.000đ
+                  div Ngày khởi hành: 20/10/2024
+                  div Khởi hành tại: Hà Nội
+            .inner_item 
+              img(src="assets/images/tour_1.png", alt="tour picture")
+              .inner_content 
+                .inner_name Tour Hạ Long
+                .inner_price 
+                  div Người lớn: 3 x 1.500.000đ
+                  div Trẻ em: 2 x 1.300.000đ
+                  div Em bé: 2 x 1.000.000đ
+                  div Ngày khởi hành: 20/10/2024
+                  div Khởi hành tại: Hà Nội
+        .inner_group
+          label.inner_label(for="") Thanh toán
+          .inner_order_total 
+            div Tổng tiền: 10.000.000đ
+            div Giảm: 400.000đ
+            div Mã giảm: TOURMUAHE2024
+            div Thanh toán: <span>9.600.000đ</span>
+        .inner_group.inner_2_cols 
+          button Cập nhật
+      .inner_back 
+        a(href="#") Quay lại danh sách 
+    //- END SECTION 8
