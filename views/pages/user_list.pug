@@ -1,0 +1,81 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+include ../mixins/section_7.pug
+
+block title 
+  title Quản lý người dùng
+
+block main
+  main.main
+    .box_title Quản lý người dùng
+
+    //- SECTION 4
+    .section_4 
+      .inner_wrap
+        .inner_item 
+          <i class="fa-solid fa-filter"></i>
+          span Bộ lọc
+        .inner_item 
+          select(name="")
+            option(value="") Trạng thái  
+            option(value="") Hoạt động  
+            option(value="") Tạm dừng  
+        .inner_item 
+          input(type="date")
+          span -
+          input(type="date")
+        .inner_item.inner_reset 
+          <i class="fa-solid fa-rotate-left"></i>
+          span Xóa bộ lọc
+    //- END SECTION 4
+
+    //- SECTION 5
+    .section_5
+      .inner_wrap 
+        form.inner_change_status 
+          select(name="")
+            option(value="") -- Hành động --
+            option(value="") -- Tạm dừng --
+            option(value="") -- Hoạt động --
+          button Áp dụng
+        form.inner_search 
+          button <i class="fa-solid fa-magnifying-glass"></i>
+          input(type="text" placeholder="Tìm kiếm")
+    //- END SECTION 5
+
+    //- SECTION 6
+    .section_6 
+      .table_2 
+        table 
+          thead 
+            tr 
+              th.align_center
+                +checkbox-1("check_all")
+              th Họ tên
+              th.align_center Ảnh đại diện
+              th Email
+              th Số điện thoại
+              th Địa chỉ
+              th Trạng thái
+              th Hành động
+          tbody 
+            tr 
+              td.align_center 
+                +checkbox-1("check")
+              td Lê Văn A
+              td.align_center 
+                img(src="assets/images/logo.png", alt="tour image")
+              td levana@gmail.com
+              td 01234567890
+              td Số 123, đường ABC,...
+              td
+                .tag.tag_green Hoạt động
+              td 
+                .box_action 
+                  a(href="#") <i class="fa-solid fa-pen-to-square"></i>
+                  a(href="#") <i class="fa-solid fa-trash-can"></i>
+    //- END SECTION 6
+
+    //- SECTION 7
+    +section-7() 
+    //- END SECTION 7
