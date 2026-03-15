@@ -1020,6 +1020,12 @@ button {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  .section_8 .inner_group.inner_list .inner_input_item input {
+    width: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .section_8 {
     padding: 20px;
@@ -1032,11 +1038,27 @@ button {
   .section_8 .inner_group.inner_2_cols {
     grid-column: span 1;
   }
+
+  .section_8 .inner_schedule_create {
+    display: block;
+    width: 151px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 576px) {
   .section_8 {
-    padding: 15px;
+    padding: 10px;
+  }
+
+  .section_8 .inner_schedule_head {
+    flex-wrap: wrap;
+  }
+
+  .section_8 .inner_schedule_head input {
+    flex: none;
+    width: 100%;
+    order: 1;
   }
 }
 /* END SECTION 8 */
