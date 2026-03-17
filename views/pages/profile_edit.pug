@@ -21,13 +21,10 @@ block main
           input.inner_control#phone(type="text" value="0123456789")
         .inner_group
           label.inner_label(for="rank") Chức vụ
-          input.inner_control#rank(type="text" value="Giám đốc")
+          input.inner_control#rank(type="text" value="Giám đốc" readonly)
         .inner_group
           label.inner_label(for="permission") Nhóm quyền
-          select.inner_control#permission
-            option(value="") Nhóm quyền 1
-            option(value="") Nhóm quyền 2
-            option(value="") Nhóm quyền 3
+          input.inner_control#permission(type="text" value="Quản trị viên" readonly)
         .inner_group.inner_2_cols
           label.inner_label(for="file") Ảnh đại diện
           input.inner_control#file(type="file")
