@@ -1,0 +1,38 @@
+extends ../layouts/layout_2.pug
+
+block title 
+  title Thông tin cá nhân
+
+block main
+  main.main
+    .box_title Thông tin cá nhân
+
+    //- SECTION 8
+    .section_8 
+      form
+        .inner_group
+          label.inner_label(for="name") Họ tên
+          input.inner_control#name(type="text" value="Lê Văn A")
+        .inner_group
+          label.inner_label(for="email") Email
+          input.inner_control#email(type="email" value="levana@gmail.com")
+        .inner_group
+          label.inner_label(for="phone") Số điện thoại
+          input.inner_control#phone(type="text" value="0123456789")
+        .inner_group
+          label.inner_label(for="rank") Chức vụ
+          input.inner_control#rank(type="text" value="Giám đốc")
+        .inner_group
+          label.inner_label(for="permission") Nhóm quyền
+          select.inner_control#permission
+            option(value="") Nhóm quyền 1
+            option(value="") Nhóm quyền 2
+            option(value="") Nhóm quyền 3
+        .inner_group.inner_2_cols
+          label.inner_label(for="file") Ảnh đại diện
+          input.inner_control#file(type="file")
+        .inner_group.inner_2_cols 
+          button Cập nhật
+      .inner_back 
+        a(href="#") Đổi mật khẩu
+    //- END SECTION 8
