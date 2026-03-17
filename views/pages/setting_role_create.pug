@@ -1,0 +1,34 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+
+block title 
+  title Tạo nhóm quyền
+
+block main
+  main.main
+    .box_title Tạo nhóm quyền
+
+    //- SECTION 8
+    .section_8 
+      form
+        .inner_group
+          label.inner_label(for="perm_name") Tên nhóm quyền
+          input.inner_control#perm_name(type="text" placeholder="Quản trị viên")
+       
+        .inner_group
+          label.inner_label(for="desc") Mô tả ngắn
+          input.inner_control#desc(type="text" value="Có đầy đủ các quyền")
+        
+        .inner_group.inner_list 
+          label.inner_label Phân quyền
+          .inner_checkbox_list
+            +checkbox-1("checkbox-1","Xem trang Tổng quan")
+            +checkbox-1("checkbox-2","Xem danh mục")
+            +checkbox-1("checkbox-3","Tạo danh mục")
+            +checkbox-1("checkbox-4","Sửa danh mục")
+            +checkbox-1("checkbox-4","Xóa danh mục")
+        .inner_group.inner_2_cols 
+          button Tạo mới
+      .inner_back 
+        a(href="#") Quay lại danh sách 
+    //- END SECTION 8
