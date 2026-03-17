@@ -1,0 +1,47 @@
+extends ../layouts/layout_2.pug
+include ../mixins/checkbox_1.pug
+
+block title 
+  title Nhóm quyền
+
+block main
+  main.main
+    .box_title Nhóm quyền
+
+    //- SECTION 5
+    .section_5
+      .inner_wrap 
+        form.inner_change_status 
+          select(name="")
+            option(value="") -- Hành động --
+            option(value="") -- Tạm dừng --
+            option(value="") -- Hoạt động --
+          button Áp dụng
+        form.inner_search 
+          button <i class="fa-solid fa-magnifying-glass"></i>
+          input(type="text" placeholder="Tìm kiếm")
+        a.inner_create(href="#") + Tạo mới
+    //- END SECTION 5
+
+    //- SECTION 6
+    .section_6 
+      .table_2 
+        table 
+          thead 
+            tr 
+              th.align_center
+                +checkbox-1("check_all")
+              th Tên nhóm quyền
+              th Mô tả ngắn
+              th Hành động
+          tbody 
+            tr 
+              td.align_center 
+                +checkbox-1("check")
+              td Quản trị viên
+              td Có đầy đủ các quyền
+              td
+                .box_action
+                  a(href="#") <i class="fa-solid fa-pen-to-square"></i>
+                  a(href="#") <i class="fa-solid fa-trash-can"></i>
+    //- END SECTION 6
