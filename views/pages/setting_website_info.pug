@@ -1,0 +1,35 @@
+extends ../layouts/layout_2.pug
+
+block title 
+  title Thông tin website
+
+block main
+  main.main
+    .box_title Thông tin website
+
+    //- SECTION 8
+    .section_8 
+      form
+        .inner_group
+          label.inner_label(for="name") Tên website
+          input.inner_control#name(type="text" value="28.TRAVEL")
+        .inner_group
+          label.inner_label(for="phone") Số điện thoại
+          input.inner_control#phone(type="text" value="0123456789")
+        .inner_group
+          label.inner_label(for="email") Email
+          input.inner_control#email(type="text" value="contact@28.travel.com")
+        .inner_group
+          label.inner_label(for="address") Địa chỉ
+          input.inner_control#address(type="text" value="Số 123, đường ABC")
+        .inner_group
+          label.inner_label(for="logo") Logo
+          input.inner_control#logo(type="file")
+        .inner_group
+          label.inner_label(for="favicon") Favicon
+          input.inner_control#favicon(type="file")
+        .inner_group.inner_2_cols 
+          button Cập nhật
+      .inner_back 
+        a(href="#") Quay lại danh sách 
+    //- END SECTION 8

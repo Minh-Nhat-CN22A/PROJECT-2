@@ -1040,6 +1040,14 @@ button {
   .section_8 .inner_group.inner_list .inner_input_item input {
     width: 0;
   }
+
+  .section_8 .inner_group .inner_control#logo {
+    width: 100%;
+  }
+
+  .section_8 .inner_group .inner_control#favicon {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

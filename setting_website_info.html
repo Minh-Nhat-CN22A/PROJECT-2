@@ -1,0 +1,73 @@
+<!DOCTYPE html >
+<html>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thông tin website</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</html>
+<body> 
+  <header class="header"><a class="inner_logo" href="#"> <span>28</span><span>Admin</span></a>
+    <div class="inner_wrap"> 
+      <div class="inner_notify"><img src="assets/images/icon_bell.svg" alt="bell icon"/><span>6</span></div>
+      <div class="inner_account"> <img src="assets/images/logo.png" alt="account avatar"/>
+        <div class="inner_text"> 
+          <div class="inner_name">Le Van A</div>
+          <div class="inner_role">Admin</div>
+        </div>
+      </div>
+      <button class="inner_btn_menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+  <Aside class="sider"> 
+    <ul class="inner_menu"> 
+      <li> <a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Tổng quan</a></li>
+      <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Quản lý danh mục </a></li>
+      <li><a href="#"><i class="fa-solid fa-table-list"></i> Quản lý tour </a></li>
+      <li><a href="#"><i class="fa-solid fa-list-check"></i> Quản lý đơn hàng </a></li>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Quản lý người dùng </a></li>
+      <li><a href="#"><i class="fa-solid fa-user-group"></i> Thông tin liên hệ </a></li>
+    </ul>
+    <hr/>
+    <ul class="inner_menu">
+      <li><a href="#"><i class="fa-solid fa-gear"></i> Cài đặt chung</a></li>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Thông tin cá nhân</a></li>
+      <li><a class="inner_logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
+    </ul>
+  </Aside>
+  <main class="main">
+    <div class="box_title">Thông tin website</div>
+    <div class="section_8"> 
+      <form>
+        <div class="inner_group">
+          <label class="inner_label" for="name">Tên website</label>
+          <input class="inner_control" id="name" type="text" value="28.TRAVEL"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="phone">Số điện thoại</label>
+          <input class="inner_control" id="phone" type="text" value="0123456789"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="email">Email</label>
+          <input class="inner_control" id="email" type="text" value="contact@28.travel.com"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="address">Địa chỉ</label>
+          <input class="inner_control" id="address" type="text" value="Số 123, đường ABC"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="logo">Logo</label>
+          <input class="inner_control" id="logo" type="file"/>
+        </div>
+        <div class="inner_group">
+          <label class="inner_label" for="favicon">Favicon</label>
+          <input class="inner_control" id="favicon" type="file"/>
+        </div>
+        <div class="inner_group inner_2_cols"> 
+          <button>Cập nhật</button>
+        </div>
+      </form>
+      <div class="inner_back"> <a href="#">Quay lại danh sách </a></div>
+    </div>
+  </main>
+</body>
